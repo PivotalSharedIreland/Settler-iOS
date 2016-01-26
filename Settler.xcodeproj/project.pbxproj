@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE99C047C50B88B1B88B02CD /* .pairs in Resources */ = {isa = PBXBuildFile; fileRef = DE99C509F144BF5E84C0E687 /* .pairs */; };
+		313502C960452635CA30391D /* Pods_SettlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */; };
+		69D3563C66C251B9C94B67B6 /* Pods_SettlerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */; };
 		DE99C3A6F0D2696DC4C68D85 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C1C088A42FE9E9C1606C /* Info.plist */; };
 		DE99C454CCFD120E20D75A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CF294B2F2FB1505FCA67 /* ViewController.swift */; };
 		DE99C78C80914D7030D4D5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C0876651F0C10F63E99B /* LaunchScreen.storyboard */; };
@@ -38,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SettlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SettlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE99C1C088A42FE9E9C1606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99C33C697C420A06E48509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99C3A7C872C76AEE74E648 /* SettlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +60,7 @@
 		DE99CE093A2922603055F3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CF294B2F2FB1505FCA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE99CF3B53B37CC32D420D25 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313502C960452635CA30391D /* Pods_SettlerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +83,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D3563C66C251B9C94B67B6 /* Pods_SettlerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BCADCE298B48DD0AA3DD2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */,
+				921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE99C19A46660FF1139326C1 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +109,8 @@
 				DE99CF3B53B37CC32D420D25 /* .gitignore */,
 				DE99C509F144BF5E84C0E687 /* .pairs */,
 				DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */,
+				E9A4A30A773C4F50E68AAE07 /* Pods */,
+				1BCADCE298B48DD0AA3DD2E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +155,17 @@
 			path = Settler;
 			sourceTree = "<group>";
 		};
+		E9A4A30A773C4F50E68AAE07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */,
+				FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */,
+				D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */,
+				6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99C996DAE25844585F40B5 /* Build configuration list for PBXNativeTarget "SettlerTests" */;
 			buildPhases = (
+				BA7A31323BCA09C02D64DCDC /* Check Pods Manifest.lock */,
 				DE99C00249DEAF4B036E373A /* Sources */,
 				DE99C2D8E5D007D31C73607E /* Frameworks */,
 				DE99C5D81CCA4B1902E6F2E8 /* Resources */,
+				73478F30F6A6A4BF59D306B4 /* Embed Pods Frameworks */,
+				37AD54EDA7BDAD2A1D30CE5E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99C15A2D7D067B85A08B7B /* Build configuration list for PBXNativeTarget "SettlerUITests" */;
 			buildPhases = (
+				17D792592DBF18E6CBBD95EE /* Check Pods Manifest.lock */,
 				DE99C2F3259E309AE0D853EA /* Sources */,
 				DE99CCCE1AA9B6BCF016B146 /* Frameworks */,
 				DE99CFE284A216CAE921B7FC /* Resources */,
+				220C681F75A08B0C921491A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +233,7 @@
 		DE99CFFCB9B69A0001ECC98F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				ORGANIZATIONNAME = "Pivotal Labs";
 			};
 			buildConfigurationList = DE99C064A3A9FABE57B183F4 /* Build configuration list for PBXProject "Settler" */;
@@ -227,7 +264,6 @@
 				DE99CD2926ED69E06EB27A8D /* Assets.xcassets in Resources */,
 				DE99C78C80914D7030D4D5B5 /* LaunchScreen.storyboard in Resources */,
 				DE99CF2160F960C3A9410075 /* Main.storyboard in Resources */,
-				DE99C047C50B88B1B88B02CD /* .pairs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +284,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17D792592DBF18E6CBBD95EE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		220C681F75A08B0C921491A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37AD54EDA7BDAD2A1D30CE5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73478F30F6A6A4BF59D306B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7A31323BCA09C02D64DCDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE99C00249DEAF4B036E373A /* Sources */ = {
@@ -360,6 +474,7 @@
 		};
 		DE99C16DC61B9B268D496ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
 				INFOPLIST_FILE = SettlerUITests/Info.plist;
@@ -416,6 +531,7 @@
 		};
 		DE99C3C9A8A3E816D178EE7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
 				INFOPLIST_FILE = SettlerTests/Info.plist;
@@ -428,6 +544,7 @@
 		};
 		DE99C6633C3388177471AB66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
 				INFOPLIST_FILE = SettlerTests/Info.plist;
@@ -440,6 +557,7 @@
 		};
 		DE99C9199DBD34631C24E319 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
 				INFOPLIST_FILE = SettlerUITests/Info.plist;
@@ -480,6 +598,7 @@
 				DE99C9199DBD34631C24E319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE99C996DAE25844585F40B5 /* Build configuration list for PBXNativeTarget "SettlerTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +607,7 @@
 				DE99C3C9A8A3E816D178EE7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE99CC4272D0935FF4B42875 /* Build configuration list for PBXNativeTarget "Settler" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +616,7 @@
 				DE99CB9A0C4896833117006F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
