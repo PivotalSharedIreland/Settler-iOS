@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		313502C960452635CA30391D /* Pods_SettlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */; };
-		AEFA71321C57DD7000CC5D98 /* SettlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA71311C57DD7000CC5D98 /* SettlerUITests.swift */; };
 		AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */; };
-		DE99C3A6F0D2696DC4C68D85 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C1C088A42FE9E9C1606C /* Info.plist */; };
+		AEFA71481C591C2900CC5D98 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71461C591C2900CC5D98 /* Nimble.framework */; };
+		AEFA71491C591C2900CC5D98 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71471C591C2900CC5D98 /* Quick.framework */; };
+		AEFA71681C591F1000CC5D98 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71461C591C2900CC5D98 /* Nimble.framework */; };
+		AEFA71691C591F1000CC5D98 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71471C591C2900CC5D98 /* Quick.framework */; };
+		AEFA716B1C59202F00CC5D98 /* SettlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA71311C57DD7000CC5D98 /* SettlerUITests.swift */; };
+		AEFA71731C59221700CC5D98 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71711C59221700CC5D98 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEFA71741C59221700CC5D98 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71721C59221700CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEFA71781C59228A00CC5D98 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71761C59228A00CC5D98 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEFA71791C59228A00CC5D98 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */; };
 		DE99C78C80914D7030D4D5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C0876651F0C10F63E99B /* LaunchScreen.storyboard */; };
 		DE99CA683ACE3EE948EC8987 /* SettlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA6F0A7629E72C8668B9 /* SettlerTests.swift */; };
 		DE99CCA43102293CAC35B26C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CC7263FDB4494749903B /* AppDelegate.swift */; };
-		DE99CCD89617125EA65E012E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CE093A2922603055F3D4 /* Info.plist */; };
 		DE99CD2926ED69E06EB27A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33C697C420A06E48509 /* Assets.xcassets */; };
 		DE99CF2160F960C3A9410075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C3D281275F300D1C2A32 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AEFA71341C57DD7000CC5D98 /* PBXContainerItemProxy */ = {
+		AEFA71631C591F0700CC5D98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE99CFFCB9B69A0001ECC98F /* Project object */;
 			proxyType = 1;
@@ -37,16 +42,44 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AEFA71701C59220C00CC5D98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEFA71731C59221700CC5D98 /* Nimble.framework in CopyFiles */,
+				AEFA71741C59221700CC5D98 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFA71751C59227D00CC5D98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEFA71781C59228A00CC5D98 /* Nimble.framework in CopyFiles */,
+				AEFA71791C59228A00CC5D98 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SettlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SettlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEFA712F1C57DD7000CC5D98 /* SettlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFA71311C57DD7000CC5D98 /* SettlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerUITests.swift; sourceTree = "<group>"; };
 		AEFA71331C57DD7000CC5D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
-		D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEFA71461C591C2900CC5D98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AEFA71471C591C2900CC5D98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		AEFA715E1C591F0700CC5D98 /* SettlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFA71711C59221700CC5D98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AEFA71721C59221700CC5D98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		AEFA71761C59228A00CC5D98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AEFA71771C59228A00CC5D98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		DE99C1C088A42FE9E9C1606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99C33C697C420A06E48509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99C3A7C872C76AEE74E648 /* SettlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,14 +93,15 @@
 		DE99CE093A2922603055F3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListTableViewController.swift; sourceTree = "<group>"; };
 		DE99CF3B53B37CC32D420D25 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
-		FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AEFA712C1C57DD7000CC5D98 /* Frameworks */ = {
+		AEFA715B1C591F0700CC5D98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFA71681C591F1000CC5D98 /* Nimble.framework in Frameworks */,
+				AEFA71691C591F1000CC5D98 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				313502C960452635CA30391D /* Pods_SettlerTests.framework in Frameworks */,
+				AEFA71481C591C2900CC5D98 /* Nimble.framework in Frameworks */,
+				AEFA71491C591C2900CC5D98 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +127,8 @@
 		1BCADCE298B48DD0AA3DD2E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEFA71461C591C2900CC5D98 /* Nimble.framework */,
+				AEFA71471C591C2900CC5D98 /* Quick.framework */,
 				0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */,
 				921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */,
 			);
@@ -110,6 +147,10 @@
 		DE99C19A46660FF1139326C1 = {
 			isa = PBXGroup;
 			children = (
+				AEFA71761C59228A00CC5D98 /* Nimble.framework */,
+				AEFA71771C59228A00CC5D98 /* Quick.framework */,
+				AEFA71711C59221700CC5D98 /* Nimble.framework */,
+				AEFA71721C59221700CC5D98 /* Quick.framework */,
 				DE99C916C69E9DE8D7D751F9 /* Products */,
 				DE99CF8B06062F555E7F27B0 /* Settler */,
 				AEFA71301C57DD7000CC5D98 /* SettlerUITests */,
@@ -117,7 +158,6 @@
 				DE99CF3B53B37CC32D420D25 /* .gitignore */,
 				DE99C509F144BF5E84C0E687 /* .pairs */,
 				DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */,
-				E9A4A30A773C4F50E68AAE07 /* Pods */,
 				1BCADCE298B48DD0AA3DD2E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +167,7 @@
 			children = (
 				DE99CAA88B37F8CDA8457435 /* Settler.app */,
 				DE99C3A7C872C76AEE74E648 /* SettlerTests.xctest */,
-				AEFA712F1C57DD7000CC5D98 /* SettlerUITests.xctest */,
+				AEFA715E1C591F0700CC5D98 /* SettlerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,48 +195,36 @@
 			path = Settler;
 			sourceTree = "<group>";
 		};
-		E9A4A30A773C4F50E68AAE07 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */,
-				FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */,
-				D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */,
-				6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AEFA712E1C57DD7000CC5D98 /* SettlerUITests */ = {
+		AEFA715D1C591F0700CC5D98 /* SettlerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEFA71361C57DD7000CC5D98 /* Build configuration list for PBXNativeTarget "SettlerUITests" */;
+			buildConfigurationList = AEFA71651C591F0700CC5D98 /* Build configuration list for PBXNativeTarget "SettlerUITests" */;
 			buildPhases = (
-				AEFA712B1C57DD7000CC5D98 /* Sources */,
-				AEFA712C1C57DD7000CC5D98 /* Frameworks */,
-				AEFA712D1C57DD7000CC5D98 /* Resources */,
+				AEFA715A1C591F0700CC5D98 /* Sources */,
+				AEFA715B1C591F0700CC5D98 /* Frameworks */,
+				AEFA715C1C591F0700CC5D98 /* Resources */,
+				AEFA71701C59220C00CC5D98 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AEFA71351C57DD7000CC5D98 /* PBXTargetDependency */,
+				AEFA71641C591F0700CC5D98 /* PBXTargetDependency */,
 			);
 			name = SettlerUITests;
 			productName = SettlerUITests;
-			productReference = AEFA712F1C57DD7000CC5D98 /* SettlerUITests.xctest */;
+			productReference = AEFA715E1C591F0700CC5D98 /* SettlerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		DE99C8F5978C9B78C55EA29D /* SettlerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99C996DAE25844585F40B5 /* Build configuration list for PBXNativeTarget "SettlerTests" */;
 			buildPhases = (
-				BA7A31323BCA09C02D64DCDC /* Check Pods Manifest.lock */,
 				DE99C00249DEAF4B036E373A /* Sources */,
 				DE99C2D8E5D007D31C73607E /* Frameworks */,
 				DE99C5D81CCA4B1902E6F2E8 /* Resources */,
-				73478F30F6A6A4BF59D306B4 /* Embed Pods Frameworks */,
-				37AD54EDA7BDAD2A1D30CE5E /* Copy Pods Resources */,
+				AEFA71751C59227D00CC5D98 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -232,9 +260,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Pivotal Labs";
 				TargetAttributes = {
-					AEFA712E1C57DD7000CC5D98 = {
+					AEFA715D1C591F0700CC5D98 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = DE99CA0D954517A09E479FED;
 					};
@@ -254,13 +283,13 @@
 			targets = (
 				DE99CA0D954517A09E479FED /* Settler */,
 				DE99C8F5978C9B78C55EA29D /* SettlerTests */,
-				AEFA712E1C57DD7000CC5D98 /* SettlerUITests */,
+				AEFA715D1C591F0700CC5D98 /* SettlerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AEFA712D1C57DD7000CC5D98 /* Resources */ = {
+		AEFA715C1C591F0700CC5D98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE99CCD89617125EA65E012E /* Info.plist in Resources */,
 				DE99CD2926ED69E06EB27A8D /* Assets.xcassets in Resources */,
 				DE99C78C80914D7030D4D5B5 /* LaunchScreen.storyboard in Resources */,
 				DE99CF2160F960C3A9410075 /* Main.storyboard in Resources */,
@@ -282,66 +310,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE99C3A6F0D2696DC4C68D85 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		37AD54EDA7BDAD2A1D30CE5E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73478F30F6A6A4BF59D306B4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA7A31323BCA09C02D64DCDC /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		AEFA712B1C57DD7000CC5D98 /* Sources */ = {
+		AEFA715A1C591F0700CC5D98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEFA71321C57DD7000CC5D98 /* SettlerUITests.swift in Sources */,
+				AEFA716B1C59202F00CC5D98 /* SettlerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +345,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AEFA71351C57DD7000CC5D98 /* PBXTargetDependency */ = {
+		AEFA71641C591F0700CC5D98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE99CA0D954517A09E479FED /* Settler */;
-			targetProxy = AEFA71341C57DD7000CC5D98 /* PBXContainerItemProxy */;
+			targetProxy = AEFA71631C591F0700CC5D98 /* PBXContainerItemProxy */;
 		};
 		DE99C4521134166C4F56BD2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -398,9 +377,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AEFA71371C57DD7000CC5D98 /* Debug */ = {
+		AEFA71661C591F0700CC5D98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SettlerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.example.SettlerUITests;
@@ -410,9 +393,13 @@
 			};
 			name = Debug;
 		};
-		AEFA71381C57DD7000CC5D98 /* Release */ = {
+		AEFA71671C591F0700CC5D98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SettlerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.example.SettlerUITests;
@@ -463,6 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Settler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Settler;
@@ -516,9 +507,12 @@
 		};
 		DE99C3C9A8A3E816D178EE7C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SettlerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SettlerTests;
@@ -529,9 +523,12 @@
 		};
 		DE99C6633C3388177471AB66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SettlerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SettlerTests;
@@ -544,6 +541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Settler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Settler;
@@ -554,14 +555,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AEFA71361C57DD7000CC5D98 /* Build configuration list for PBXNativeTarget "SettlerUITests" */ = {
+		AEFA71651C591F0700CC5D98 /* Build configuration list for PBXNativeTarget "SettlerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEFA71371C57DD7000CC5D98 /* Debug */,
-				AEFA71381C57DD7000CC5D98 /* Release */,
+				AEFA71661C591F0700CC5D98 /* Debug */,
+				AEFA71671C591F0700CC5D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		DE99C064A3A9FABE57B183F4 /* Build configuration list for PBXProject "Settler" */ = {
 			isa = XCConfigurationList;
