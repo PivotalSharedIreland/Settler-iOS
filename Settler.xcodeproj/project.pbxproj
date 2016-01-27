@@ -8,28 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		313502C960452635CA30391D /* Pods_SettlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5994837AD842967D2B6D34 /* Pods_SettlerTests.framework */; };
-		69D3563C66C251B9C94B67B6 /* Pods_SettlerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */; };
+		AEFA71321C57DD7000CC5D98 /* SettlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA71311C57DD7000CC5D98 /* SettlerUITests.swift */; };
+		AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */; };
 		DE99C3A6F0D2696DC4C68D85 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C1C088A42FE9E9C1606C /* Info.plist */; };
-		DE99C454CCFD120E20D75A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CF294B2F2FB1505FCA67 /* ViewController.swift */; };
+		DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */; };
 		DE99C78C80914D7030D4D5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C0876651F0C10F63E99B /* LaunchScreen.storyboard */; };
 		DE99CA683ACE3EE948EC8987 /* SettlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA6F0A7629E72C8668B9 /* SettlerTests.swift */; };
-		DE99CA958B552FD294034E40 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C6E9160CBF230661F7AB /* Info.plist */; };
 		DE99CCA43102293CAC35B26C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CC7263FDB4494749903B /* AppDelegate.swift */; };
 		DE99CCD89617125EA65E012E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CE093A2922603055F3D4 /* Info.plist */; };
 		DE99CD2926ED69E06EB27A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33C697C420A06E48509 /* Assets.xcassets */; };
 		DE99CF2160F960C3A9410075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C3D281275F300D1C2A32 /* Main.storyboard */; };
-		DE99CF8A9C13B40745C4BECB /* SettlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C732DFDDD9E51A7AE751 /* SettlerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DE99C4BC1AC5F8A2E2304256 /* PBXContainerItemProxy */ = {
+		AEFA71341C57DD7000CC5D98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE99CFFCB9B69A0001ECC98F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DE99CA0D954517A09E479FED;
 			remoteInfo = Settler;
 		};
-		DE99C5C2EB5F1F4517618AFE /* PBXContainerItemProxy */ = {
+		DE99C4BC1AC5F8A2E2304256 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE99CFFCB9B69A0001ECC98F /* Project object */;
 			proxyType = 1;
@@ -43,27 +42,35 @@
 		29D0DF9D2D3F880271C16814 /* Pods-SettlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		921633BA1B9C931753A5F06B /* Pods_SettlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SettlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFA712F1C57DD7000CC5D98 /* SettlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFA71311C57DD7000CC5D98 /* SettlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerUITests.swift; sourceTree = "<group>"; };
+		AEFA71331C57DD7000CC5D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
 		D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE99C1C088A42FE9E9C1606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99C33C697C420A06E48509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99C3A7C872C76AEE74E648 /* SettlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = HISTORY.md; sourceTree = "<group>"; };
 		DE99C509F144BF5E84C0E687 /* .pairs */ = {isa = PBXFileReference; lastKnownFileType = file.pairs; path = .pairs; sourceTree = "<group>"; };
-		DE99C5C03A49A07488306B98 /* SettlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE99C6E9160CBF230661F7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		DE99C732DFDDD9E51A7AE751 /* SettlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerUITests.swift; sourceTree = "<group>"; };
 		DE99C8904882890E8384061F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99CA6F0A7629E72C8668B9 /* SettlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerTests.swift; sourceTree = "<group>"; };
 		DE99CAA88B37F8CDA8457435 /* Settler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99CB264AF81A7D5EA5928E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE99CC7263FDB4494749903B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE99CE093A2922603055F3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		DE99CF294B2F2FB1505FCA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListTableViewController.swift; sourceTree = "<group>"; };
 		DE99CF3B53B37CC32D420D25 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		FC281E97B0718D05E8C10153 /* Pods-SettlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SettlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SettlerTests/Pods-SettlerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AEFA712C1C57DD7000CC5D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE99C2D8E5D007D31C73607E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,14 +86,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE99CCCE1AA9B6BCF016B146 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69D3563C66C251B9C94B67B6 /* Pods_SettlerUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,13 +98,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AEFA71301C57DD7000CC5D98 /* SettlerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEFA71311C57DD7000CC5D98 /* SettlerUITests.swift */,
+				AEFA71331C57DD7000CC5D98 /* Info.plist */,
+			);
+			path = SettlerUITests;
+			sourceTree = "<group>";
+		};
 		DE99C19A46660FF1139326C1 = {
 			isa = PBXGroup;
 			children = (
 				DE99C916C69E9DE8D7D751F9 /* Products */,
 				DE99CF8B06062F555E7F27B0 /* Settler */,
+				AEFA71301C57DD7000CC5D98 /* SettlerUITests */,
 				DE99CD20C5DE375ED4D81B81 /* SettlerTests */,
-				DE99CF50FAD1CD8FBCBDDBA4 /* SettlerUITests */,
 				DE99CF3B53B37CC32D420D25 /* .gitignore */,
 				DE99C509F144BF5E84C0E687 /* .pairs */,
 				DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */,
@@ -119,7 +127,7 @@
 			children = (
 				DE99CAA88B37F8CDA8457435 /* Settler.app */,
 				DE99C3A7C872C76AEE74E648 /* SettlerTests.xctest */,
-				DE99C5C03A49A07488306B98 /* SettlerUITests.xctest */,
+				AEFA712F1C57DD7000CC5D98 /* SettlerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,15 +141,6 @@
 			path = SettlerTests;
 			sourceTree = "<group>";
 		};
-		DE99CF50FAD1CD8FBCBDDBA4 /* SettlerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DE99C6E9160CBF230661F7AB /* Info.plist */,
-				DE99C732DFDDD9E51A7AE751 /* SettlerUITests.swift */,
-			);
-			path = SettlerUITests;
-			sourceTree = "<group>";
-		};
 		DE99CF8B06062F555E7F27B0 /* Settler */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +149,8 @@
 				DE99C0876651F0C10F63E99B /* LaunchScreen.storyboard */,
 				DE99CC7263FDB4494749903B /* AppDelegate.swift */,
 				DE99C3D281275F300D1C2A32 /* Main.storyboard */,
-				DE99CF294B2F2FB1505FCA67 /* ViewController.swift */,
+				AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */,
+				DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */,
 			);
 			path = Settler;
 			sourceTree = "<group>";
@@ -169,6 +169,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AEFA712E1C57DD7000CC5D98 /* SettlerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFA71361C57DD7000CC5D98 /* Build configuration list for PBXNativeTarget "SettlerUITests" */;
+			buildPhases = (
+				AEFA712B1C57DD7000CC5D98 /* Sources */,
+				AEFA712C1C57DD7000CC5D98 /* Frameworks */,
+				AEFA712D1C57DD7000CC5D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEFA71351C57DD7000CC5D98 /* PBXTargetDependency */,
+			);
+			name = SettlerUITests;
+			productName = SettlerUITests;
+			productReference = AEFA712F1C57DD7000CC5D98 /* SettlerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DE99C8F5978C9B78C55EA29D /* SettlerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99C996DAE25844585F40B5 /* Build configuration list for PBXNativeTarget "SettlerTests" */;
@@ -207,26 +225,6 @@
 			productReference = DE99CAA88B37F8CDA8457435 /* Settler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DE99CF81EA3BE54BEC3B0331 /* SettlerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE99C15A2D7D067B85A08B7B /* Build configuration list for PBXNativeTarget "SettlerUITests" */;
-			buildPhases = (
-				17D792592DBF18E6CBBD95EE /* Check Pods Manifest.lock */,
-				DE99C2F3259E309AE0D853EA /* Sources */,
-				DE99CCCE1AA9B6BCF016B146 /* Frameworks */,
-				DE99CFE284A216CAE921B7FC /* Resources */,
-				220C681F75A08B0C921491A6 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE99C3819B470E60DE2185B3 /* PBXTargetDependency */,
-			);
-			name = SettlerUITests;
-			productName = SettlerUITests;
-			productReference = DE99C5C03A49A07488306B98 /* SettlerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,6 +233,12 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				ORGANIZATIONNAME = "Pivotal Labs";
+				TargetAttributes = {
+					AEFA712E1C57DD7000CC5D98 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DE99CA0D954517A09E479FED;
+					};
+				};
 			};
 			buildConfigurationList = DE99C064A3A9FABE57B183F4 /* Build configuration list for PBXProject "Settler" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -250,12 +254,19 @@
 			targets = (
 				DE99CA0D954517A09E479FED /* Settler */,
 				DE99C8F5978C9B78C55EA29D /* SettlerTests */,
-				DE99CF81EA3BE54BEC3B0331 /* SettlerUITests */,
+				AEFA712E1C57DD7000CC5D98 /* SettlerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AEFA712D1C57DD7000CC5D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE99C480C8CFF05BD7C86C2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,47 +286,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE99CFE284A216CAE921B7FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE99CA958B552FD294034E40 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17D792592DBF18E6CBBD95EE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		220C681F75A08B0C921491A6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SettlerUITests/Pods-SettlerUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		37AD54EDA7BDAD2A1D30CE5E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +337,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AEFA712B1C57DD7000CC5D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFA71321C57DD7000CC5D98 /* SettlerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE99C00249DEAF4B036E373A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,30 +353,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE99C2F3259E309AE0D853EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE99CF8A9C13B40745C4BECB /* SettlerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DE99CF0B066A0D1EFE153BC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE99CCA43102293CAC35B26C /* AppDelegate.swift in Sources */,
-				DE99C454CCFD120E20D75A4B /* ViewController.swift in Sources */,
+				AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */,
+				DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE99C3819B470E60DE2185B3 /* PBXTargetDependency */ = {
+		AEFA71351C57DD7000CC5D98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE99CA0D954517A09E479FED /* Settler */;
-			targetProxy = DE99C5C2EB5F1F4517618AFE /* PBXContainerItemProxy */;
+			targetProxy = AEFA71341C57DD7000CC5D98 /* PBXContainerItemProxy */;
 		};
 		DE99C4521134166C4F56BD2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -424,6 +398,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AEFA71371C57DD7000CC5D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SettlerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.example.SettlerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Settler;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AEFA71381C57DD7000CC5D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SettlerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.example.SettlerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Settler;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		DE99C04EAABB3106DDF7EFF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,19 +467,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Settler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		DE99C16DC61B9B268D496ECB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9F2CFFB198AD99AB4E9A892 /* Pods-SettlerUITests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
-				INFOPLIST_FILE = SettlerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SettlerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
@@ -555,19 +540,6 @@
 			};
 			name = Debug;
 		};
-		DE99C9199DBD34631C24E319 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AAF70279AA6630D9D8CC5DD /* Pods-SettlerUITests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Settler.app/Settler";
-				INFOPLIST_FILE = SettlerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.SettlerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 		DE99CB9A0C4896833117006F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -582,20 +554,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AEFA71361C57DD7000CC5D98 /* Build configuration list for PBXNativeTarget "SettlerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFA71371C57DD7000CC5D98 /* Debug */,
+				AEFA71381C57DD7000CC5D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DE99C064A3A9FABE57B183F4 /* Build configuration list for PBXProject "Settler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE99C2D9B1C02E6574A03492 /* Debug */,
 				DE99C04EAABB3106DDF7EFF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DE99C15A2D7D067B85A08B7B /* Build configuration list for PBXNativeTarget "SettlerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE99C16DC61B9B268D496ECB /* Debug */,
-				DE99C9199DBD34631C24E319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

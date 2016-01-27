@@ -1,31 +1,41 @@
-//
-//  SettlerUITests.swift
-//  SettlerUITests
-//
-//  Created by Pivotal on 26/01/2016.
-//  Copyright (c) 2016 Pivotal Labs. All rights reserved.
-//
+import Quick
+import Nimble
 
-import XCTest
+class SettlerUISpec: QuickSpec {
 
-class SettlerUITests: XCTestCase {
+    override func spec() {
         
-    override func setUp() {
-        super.setUp()
+        beforeSuite {
+            self.continueAfterFailure = false
+            XCUIApplication().launch()
+        }
         
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+        describe("Property List Table View") {
+            var tables:XCUIElementQuery!
+            
+            beforeEach {
+                tables = XCUIApplication().tables
+            }
+            
+            it("displays a table") {
+                expect(tables.count).to(equal(1))
+            }
+            
+            it("displays 2 cells") {
+                expect(tables.childrenMatchingType(.Cell).count).to(equal(2))
+            }
+            
+            it("displays the property cell") {
+                let cell = tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
+                expect(cell.staticTexts["address"].label).notTo(beEmpty())
+                expect(cell.staticTexts["contactName"].label).notTo(beEmpty())
+                expect(cell.staticTexts["contactPhone"].label).notTo(beEmpty())
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+                expect(cell.images["thumb"]).notTo(beNil())
+                
+            }
+            
+        }
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-        
 }

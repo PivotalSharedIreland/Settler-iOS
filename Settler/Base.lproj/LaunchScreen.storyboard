@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app that settles you in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U8-Wr-BMb">
+                                <rect key="frame" x="181.5" y="341" width="238" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.7448311237373737" green="0.7448311237373737" blue="0.7448311237373737" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ3-eD-XNM">
+                                <rect key="frame" x="243" y="266" width="115" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="1U8-Wr-BMb" secondAttribute="bottom" constant="238" id="YmK-SQ-bjK"/>
+                            <constraint firstItem="1U8-Wr-BMb" firstAttribute="centerX" secondItem="vQ3-eD-XNM" secondAttribute="centerX" id="b7t-K1-EnK"/>
+                            <constraint firstItem="1U8-Wr-BMb" firstAttribute="top" secondItem="vQ3-eD-XNM" secondAttribute="bottom" constant="8" symbolic="YES" id="blL-wK-Lo6"/>
+                            <constraint firstItem="1U8-Wr-BMb" firstAttribute="top" secondItem="vQ3-eD-XNM" secondAttribute="bottom" constant="8" symbolic="YES" id="rnV-L7-Sb2"/>
+                            <constraint firstItem="vQ3-eD-XNM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xnw-LG-pZ9"/>
+                            <constraint firstItem="vQ3-eD-XNM" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="246" id="zLf-1u-gXA"/>
+                            <constraint firstItem="vQ3-eD-XNM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zTH-dy-qJt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="blL-wK-Lo6"/>
+                                <exclude reference="YmK-SQ-bjK"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
