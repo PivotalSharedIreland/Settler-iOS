@@ -7,6 +7,10 @@ class SettlerSpec: QuickSpec {
             it("should be true") {
                 expect(true).to(beTruthy())
             }
+            
+            it("should be false") {
+                expect(true).to(beFalse())
+            }
         }
     }
 }

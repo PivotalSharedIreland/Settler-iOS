@@ -42,3 +42,4 @@
         - v Non-language specific features (VCS, Local History, Live Templates)
         
 1. Testing with Mac OS X Server
+1. Prefer Carthage over cocoapods because - CI; swift packages?
