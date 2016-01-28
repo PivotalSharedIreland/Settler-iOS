@@ -9,7 +9,7 @@ class SettlerSpec: QuickSpec {
             }
             
             it("should be false") {
-                expect(true).to(beFalse())
+                expect(false).to(beFalse())
             }
         }
     }
