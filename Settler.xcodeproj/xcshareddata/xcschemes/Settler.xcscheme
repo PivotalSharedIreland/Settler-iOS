@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEFA715D1C591F0700CC5D98"
+               BlueprintIdentifier = "AEB432661C5A74D2003B41FF"
                BuildableName = "SettlerUITests.xctest"
                BlueprintName = "SettlerUITests"
                ReferencedContainer = "container:Settler.xcodeproj">

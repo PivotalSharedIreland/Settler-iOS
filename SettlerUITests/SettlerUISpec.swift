@@ -27,13 +27,11 @@ class SettlerUISpec: QuickSpec {
             it("displays the property cell") {
                 let cell = tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
                 expect(cell.staticTexts["address"].label).notTo(beEmpty())
-                expect(cell.staticTexts["contactName"].label).notTo(beEmpty())
-                expect(cell.staticTexts["contactPhone"].label).notTo(beEmpty())
+                expect(cell.staticTexts["contactName"].label).notTo(beNil())
+                expect(cell.staticTexts["contactPhone"].label).notTo(beNil())
 
                 expect(cell.images["thumb"]).notTo(beNil())
-                
             }
-            
         }
     }
 
