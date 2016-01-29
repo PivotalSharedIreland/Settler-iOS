@@ -1,7 +1,6 @@
 import Quick
 import Nimble
 import OHHTTPStubs
-import Alamofire
 
 public class SettlerHttpSpec: QuickSpec {
     public func stubSuccessResponse(response: AnyObject) {
@@ -14,7 +13,7 @@ public class SettlerHttpSpec: QuickSpec {
     public func stubFailureResponse(response: AnyObject) {
         stub(isHost("settler.cfapps.io")) {
             _ in
-            return OHHTTPStubsResponse(error: Error.errorWithCode(500, failureReason: "Network is down"))
+            return OHHTTPStubsResponse(error: NSError(domain: "", code: 500, userInfo: nil))
         }
     }
 }

@@ -1,30 +1,40 @@
-//
-//  PropertyListTableViewController.swift
-//  Settler
-//
-//  Created by Pivotal on 26/01/2016.
-//  Copyright (c) 2016 Pivotal Labs. All rights reserved.
-//
-
-
 import UIKit
 
 
-class PropertyListTableViewController: UITableViewController {
+class PropertyListTableViewController: UITableViewController, PropertyServiceDelegate {
 
-    let propertyCellKey = "PropertyCell"
+    private let propertyCellKey = "PropertyCell"
+    private var propertyService: PropertyService!
+    private var propertyList: [Property] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        propertyService = PropertyServiceFactory.propertyService(self)
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        propertyService.performSelector(Selector("loadProperties"), withObject: nil, afterDelay: 0)
+    }
+
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return propertyList.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCellWithIdentifier(propertyCellKey)!
+        let cell = tableView.dequeueReusableCellWithIdentifier(propertyCellKey) as! PropertyCell
+        let property = propertyList[indexPath.row]
+        cell.addressLabel.text = property.address
+        return cell
+    }
+
+    internal func loadPropertiesSuccess(properties: [Property]) {
+        propertyList = properties
+        tableView.reloadData()
+    }
+
+    func loadPropertiesFailure(error: NSError) {
     }
 
 

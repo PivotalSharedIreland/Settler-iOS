@@ -42,9 +42,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEFA712E1C57DD7000CC5D98"
+               BlueprintIdentifier = "AEB432871C5A7849003B41FF"
                BuildableName = "SettlerUITests.xctest"
                BlueprintName = "SettlerUITests"
+               ReferencedContainer = "container:Settler.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE317B881C5B9B1A0035D9EE"
+               BuildableName = "SettlerUITestsFailure.xctest"
+               BlueprintName = "SettlerUITestsFailure"
                ReferencedContainer = "container:Settler.xcodeproj">
             </BuildableReference>
          </TestableReference>

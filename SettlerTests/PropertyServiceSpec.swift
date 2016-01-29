@@ -50,7 +50,6 @@ class PropertyServiceSpec: SettlerHttpSpec {
                 service.loadProperties()
 
                 expect(delegate.error).toEventuallyNot(beNil())
-                expect(delegate.error?.localizedFailureReason).toEventually(equal("Network is down"))
                 expect(delegate.error?.code).toEventually(equal(500))
             }
 

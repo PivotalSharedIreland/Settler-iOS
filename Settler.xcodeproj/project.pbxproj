@@ -14,8 +14,6 @@
 		AEB4323F1C5A2AEB003B41FF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB4323B1C5A2A38003B41FF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEB432411C5A43A7003B41FF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */; };
 		AEB432421C5A43D1003B41FF /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEB432441C5A4408003B41FF /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; };
-		AEB432461C5A441E003B41FF /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEB4327B1C5A7566003B41FF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; };
 		AEB4327C1C5A756A003B41FF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71761C59228A00CC5D98 /* Nimble.framework */; };
 		AEB432921C5A7877003B41FF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFA71761C59228A00CC5D98 /* Nimble.framework */; };
@@ -23,11 +21,26 @@
 		AEB432951C5A7885003B41FF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71761C59228A00CC5D98 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEB432961C5A7885003B41FF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEB432971C5A78C3003B41FF /* SettlerUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA71311C57DD7000CC5D98 /* SettlerUISpec.swift */; };
+		AEB432A31C5B5F80003B41FF /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; };
+		AEB432A41C5B5F82003B41FF /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEB432A71C5B7AFA003B41FF /* PropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB432371C5A200C003B41FF /* PropertyService.swift */; };
+		AEB432A81C5B7AFF003B41FF /* MockPropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C53E161CBA525A214D1F /* MockPropertyService.swift */; };
+		AEB432A91C5B7B11003B41FF /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C8B08D0D0F39022F30AA /* Property.swift */; };
+		AEB432AA1C5B7B21003B41FF /* PropertySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */; };
+		AEB432AD1C5B7B44003B41FF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */; };
+		AEB432AE1C5B7B46003B41FF /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEB432B31C5B9693003B41FF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB4323B1C5A2A38003B41FF /* Alamofire.framework */; };
+		AEB432B41C5B9696003B41FF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB4323B1C5A2A38003B41FF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */; };
 		AEFA717E1C59311400CC5D98 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE99C344D66248EEBB417804 /* PropertySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */; };
+		DE99C39A547EB8FF5267D7D2 /* PropertyServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */; };
 		DE99C3C188EC0D142892C1E9 /* SettlerHttpSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */; };
 		DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */; };
+		DE99C55276069E5E4791F4D4 /* SettlerFailedPropertiesFetchUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C79A69A6D51A3E1E2A55 /* SettlerFailedPropertiesFetchUISpec.swift */; };
+		DE99C650116F6CE7649D48FF /* HttpStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C654B4B13E578F936430 /* HttpStubs.swift */; };
+		DE99C6BA363B48CE1ECC0B18 /* HttpStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C654B4B13E578F936430 /* HttpStubs.swift */; };
+		DE99C726215887C3EE18F095 /* MockPropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C53E161CBA525A214D1F /* MockPropertyService.swift */; };
 		DE99C78C80914D7030D4D5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C0876651F0C10F63E99B /* LaunchScreen.storyboard */; };
 		DE99CA0C349EE55F983E0779 /* PropertySerializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C2CE286E6419F5C43853 /* PropertySerializerSpec.swift */; };
 		DE99CA683ACE3EE948EC8987 /* SettlerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA6F0A7629E72C8668B9 /* SettlerSpec.swift */; };
@@ -35,6 +48,7 @@
 		DE99CCA43102293CAC35B26C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CC7263FDB4494749903B /* AppDelegate.swift */; };
 		DE99CD2926ED69E06EB27A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33C697C420A06E48509 /* Assets.xcassets */; };
 		DE99CF2160F960C3A9410075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C3D281275F300D1C2A32 /* Main.storyboard */; };
+		DE99CF4ACE07F0ADE0C15B6E /* HttpStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C654B4B13E578F936430 /* HttpStubs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +88,8 @@
 			files = (
 				AEB432951C5A7885003B41FF /* Nimble.framework in CopyFiles */,
 				AEB432961C5A7885003B41FF /* Quick.framework in CopyFiles */,
+				AEB432AE1C5B7B46003B41FF /* SwiftyJSON.framework in CopyFiles */,
+				AEB432B41C5B9696003B41FF /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +101,7 @@
 			files = (
 				AEFA717E1C59311400CC5D98 /* Quick.framework in CopyFiles */,
 				AEB431F71C593D16003B41FF /* Nimble.framework in CopyFiles */,
-				AEB432461C5A441E003B41FF /* OHHTTPStubs.framework in CopyFiles */,
+				AEB432A41C5B5F82003B41FF /* OHHTTPStubs.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +120,16 @@
 		AEFA71761C59228A00CC5D98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AEFA71771C59228A00CC5D98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		DE99C1C088A42FE9E9C1606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyServiceFactory.swift; sourceTree = "<group>"; };
 		DE99C2CE286E6419F5C43853 /* PropertySerializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySerializerSpec.swift; sourceTree = "<group>"; };
 		DE99C33C697C420A06E48509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySerializer.swift; sourceTree = "<group>"; };
 		DE99C3A7C872C76AEE74E648 /* SettlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = HISTORY.md; sourceTree = "<group>"; };
 		DE99C509F144BF5E84C0E687 /* .pairs */ = {isa = PBXFileReference; lastKnownFileType = file.pairs; path = .pairs; sourceTree = "<group>"; };
+		DE99C53E161CBA525A214D1F /* MockPropertyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPropertyService.swift; sourceTree = "<group>"; };
+		DE99C654B4B13E578F936430 /* HttpStubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpStubs.swift; sourceTree = "<group>"; };
+		DE99C79A69A6D51A3E1E2A55 /* SettlerFailedPropertiesFetchUISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlerFailedPropertiesFetchUISpec.swift; sourceTree = "<group>"; };
 		DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlerHttpSpec.swift; sourceTree = "<group>"; };
 		DE99C8904882890E8384061F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99C8B08D0D0F39022F30AA /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -129,6 +149,8 @@
 			files = (
 				AEB432921C5A7877003B41FF /* Nimble.framework in Frameworks */,
 				AEB432931C5A7877003B41FF /* Quick.framework in Frameworks */,
+				AEB432AD1C5B7B44003B41FF /* SwiftyJSON.framework in Frameworks */,
+				AEB432B31C5B9693003B41FF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,9 +158,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB432441C5A4408003B41FF /* OHHTTPStubs.framework in Frameworks */,
 				AEB4327B1C5A7566003B41FF /* Quick.framework in Frameworks */,
 				AEB4327C1C5A756A003B41FF /* Nimble.framework in Frameworks */,
+				AEB432A31C5B5F80003B41FF /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +182,9 @@
 				AEB432371C5A200C003B41FF /* PropertyService.swift */,
 				DE99C8B08D0D0F39022F30AA /* Property.swift */,
 				DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */,
+				DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */,
+				DE99C53E161CBA525A214D1F /* MockPropertyService.swift */,
+				DE99C654B4B13E578F936430 /* HttpStubs.swift */,
 			);
 			name = Property;
 			sourceTree = "<group>";
@@ -178,6 +203,7 @@
 			children = (
 				AEFA71311C57DD7000CC5D98 /* SettlerUISpec.swift */,
 				AEFA71331C57DD7000CC5D98 /* Info.plist */,
+				DE99C79A69A6D51A3E1E2A55 /* SettlerFailedPropertiesFetchUISpec.swift */,
 			);
 			path = SettlerUITests;
 			sourceTree = "<group>";
@@ -221,10 +247,10 @@
 		DE99CD20C5DE375ED4D81B81 /* SettlerTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */,
 				AEB432491C5A64B7003B41FF /* Property */,
 				DE99C1C088A42FE9E9C1606C /* Info.plist */,
 				DE99CA6F0A7629E72C8668B9 /* SettlerSpec.swift */,
-				DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */,
 			);
 			path = SettlerTests;
 			sourceTree = "<group>";
@@ -370,7 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB432A91C5B7B11003B41FF /* Property.swift in Sources */,
 				AEB432971C5A78C3003B41FF /* SettlerUISpec.swift in Sources */,
+				AEB432AA1C5B7B21003B41FF /* PropertySerializer.swift in Sources */,
+				AEB432A71C5B7AFA003B41FF /* PropertyService.swift in Sources */,
+				AEB432A81C5B7AFF003B41FF /* MockPropertyService.swift in Sources */,
+				DE99C650116F6CE7649D48FF /* HttpStubs.swift in Sources */,
+				DE99C55276069E5E4791F4D4 /* SettlerFailedPropertiesFetchUISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +414,7 @@
 				DE99CA683ACE3EE948EC8987 /* SettlerSpec.swift in Sources */,
 				DE99CA0C349EE55F983E0779 /* PropertySerializerSpec.swift in Sources */,
 				DE99C3C188EC0D142892C1E9 /* SettlerHttpSpec.swift in Sources */,
+				DE99C6BA363B48CE1ECC0B18 /* HttpStubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +428,9 @@
 				DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */,
 				DE99CC65BF3C232B5EA556CF /* Property.swift in Sources */,
 				DE99C344D66248EEBB417804 /* PropertySerializer.swift in Sources */,
+				DE99C39A547EB8FF5267D7D2 /* PropertyServiceFactory.swift in Sources */,
+				DE99C726215887C3EE18F095 /* MockPropertyService.swift in Sources */,
+				DE99CF4ACE07F0ADE0C15B6E /* HttpStubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +548,7 @@
 				);
 				INFOPLIST_FILE = Settler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Settler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -618,6 +655,7 @@
 				AEB432911C5A7849003B41FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE99C064A3A9FABE57B183F4 /* Build configuration list for PBXProject "Settler" */ = {
 			isa = XCConfigurationList;

@@ -54,3 +54,11 @@
 1. Testing with Mac OS X Server
 1. Prefer Carthage over cocoapods because - CI; swift packages are not production ready (Swift 3.0)
 1. use `@testable` import of the application module in the tests
+1. Due to the way UI tests are organized, the HTTP stubbing must be performed from production code. Sadly, that 
+code should also be included into the production target.
+http://stackoverflow.com/questions/32827592/is-it-possible-to-stub-http-requests-in-xcode-7-automated-ui-tests
+An approach to stubbing HTTP for UI tests is to substitute the service providers with mock ones.
+Service factories can be used to do that. To isolate the factory logic from production code,
+it can be surrounded by `#if DEBUG` `#else` `#endif` directives. To enable that, the flag `-DDEBUG`
+should be set in the "Debug" case of the "Other Swift flags" section of "Swift Compiler - Other flags" in
+ Build settings of the application target.
