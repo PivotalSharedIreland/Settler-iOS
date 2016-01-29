@@ -7,7 +7,7 @@ protocol PropertyServiceDelegate {
     func loadPropertiesFailure(error: NSError)
 }
 
-public class PropertyService: NSObject {
+class PropertyService: NSObject {
 
     var delegate: PropertyServiceDelegate
     var baseURL: String!

@@ -24,16 +24,10 @@
 		AEB432971C5A78C3003B41FF /* SettlerUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA71311C57DD7000CC5D98 /* SettlerUISpec.swift */; };
 		AEB432A31C5B5F80003B41FF /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; };
 		AEB432A41C5B5F82003B41FF /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEB432A71C5B7AFA003B41FF /* PropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB432371C5A200C003B41FF /* PropertyService.swift */; };
-		AEB432A81C5B7AFF003B41FF /* MockPropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C53E161CBA525A214D1F /* MockPropertyService.swift */; };
-		AEB432A91C5B7B11003B41FF /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C8B08D0D0F39022F30AA /* Property.swift */; };
-		AEB432AA1C5B7B21003B41FF /* PropertySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */; };
-		AEB432AD1C5B7B44003B41FF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */; };
-		AEB432AE1C5B7B46003B41FF /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEB432B31C5B9693003B41FF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB4323B1C5A2A38003B41FF /* Alamofire.framework */; };
-		AEB432B41C5B9696003B41FF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB4323B1C5A2A38003B41FF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */; };
 		AEFA717E1C59311400CC5D98 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE99C165186C199F81005618 /* UITestFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */; };
+		DE99C1D980F0EBFF5739CCBD /* UITestFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */; };
 		DE99C344D66248EEBB417804 /* PropertySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */; };
 		DE99C39A547EB8FF5267D7D2 /* PropertyServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */; };
 		DE99C3C188EC0D142892C1E9 /* SettlerHttpSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */; };
@@ -88,8 +82,6 @@
 			files = (
 				AEB432951C5A7885003B41FF /* Nimble.framework in CopyFiles */,
 				AEB432961C5A7885003B41FF /* Quick.framework in CopyFiles */,
-				AEB432AE1C5B7B46003B41FF /* SwiftyJSON.framework in CopyFiles */,
-				AEB432B41C5B9696003B41FF /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +111,7 @@
 		AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
 		AEFA71761C59228A00CC5D98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AEFA71771C59228A00CC5D98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestFixtures.swift; sourceTree = "<group>"; };
 		DE99C1C088A42FE9E9C1606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyServiceFactory.swift; sourceTree = "<group>"; };
 		DE99C2CE286E6419F5C43853 /* PropertySerializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySerializerSpec.swift; sourceTree = "<group>"; };
@@ -149,8 +142,6 @@
 			files = (
 				AEB432921C5A7877003B41FF /* Nimble.framework in Frameworks */,
 				AEB432931C5A7877003B41FF /* Quick.framework in Frameworks */,
-				AEB432AD1C5B7B44003B41FF /* SwiftyJSON.framework in Frameworks */,
-				AEB432B31C5B9693003B41FF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +176,7 @@
 				DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */,
 				DE99C53E161CBA525A214D1F /* MockPropertyService.swift */,
 				DE99C654B4B13E578F936430 /* HttpStubs.swift */,
+				DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */,
 			);
 			name = Property;
 			sourceTree = "<group>";
@@ -396,13 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB432A91C5B7B11003B41FF /* Property.swift in Sources */,
 				AEB432971C5A78C3003B41FF /* SettlerUISpec.swift in Sources */,
-				AEB432AA1C5B7B21003B41FF /* PropertySerializer.swift in Sources */,
-				AEB432A71C5B7AFA003B41FF /* PropertyService.swift in Sources */,
 				AE317B931C5BB4E90035D9EE /* SettlerFailedPropertiesFetchUISpec.swift in Sources */,
-				AEB432A81C5B7AFF003B41FF /* MockPropertyService.swift in Sources */,
 				DE99C650116F6CE7649D48FF /* HttpStubs.swift in Sources */,
+				DE99C1D980F0EBFF5739CCBD /* UITestFixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +420,7 @@
 				DE99C39A547EB8FF5267D7D2 /* PropertyServiceFactory.swift in Sources */,
 				DE99C726215887C3EE18F095 /* MockPropertyService.swift in Sources */,
 				DE99CF4ACE07F0ADE0C15B6E /* HttpStubs.swift in Sources */,
+				DE99C165186C199F81005618 /* UITestFixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

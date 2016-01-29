@@ -1,14 +1,10 @@
 import Foundation
 
-public class MockPropertyService: PropertyService {
+class MockPropertyService: PropertyService {
     override func loadProperties() {
         self.performSelector(Selector(actionSelector()), withObject: nil, afterDelay: 0)
     }
 
-    public static var address: String {
-        get { return "221B Burguss credere!" }
-    }
-    
     func returnSuccess() {
         delegate.loadPropertiesSuccess(getProperties())
     }
@@ -18,7 +14,7 @@ public class MockPropertyService: PropertyService {
     }
 
     private func getProperties() -> [Property] {
-        return [Property(address: self.dynamicType.address)]
+        return [Property(address: UITestFixtures.PropertyAddress.rawValue)]
     }
 
     private func actionSelector() -> String {
