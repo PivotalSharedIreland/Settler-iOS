@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE317B931C5BB4E90035D9EE /* SettlerFailedPropertiesFetchUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C79A69A6D51A3E1E2A55 /* SettlerFailedPropertiesFetchUISpec.swift */; };
 		AEB431F71C593D16003B41FF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71761C59228A00CC5D98 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEB432381C5A200C003B41FF /* PropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB432371C5A200C003B41FF /* PropertyService.swift */; };
 		AEB4323A1C5A2029003B41FF /* PropertyServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB432391C5A2029003B41FF /* PropertyServiceSpec.swift */; };
@@ -399,6 +400,7 @@
 				AEB432971C5A78C3003B41FF /* SettlerUISpec.swift in Sources */,
 				AEB432AA1C5B7B21003B41FF /* PropertySerializer.swift in Sources */,
 				AEB432A71C5B7AFA003B41FF /* PropertyService.swift in Sources */,
+				AE317B931C5BB4E90035D9EE /* SettlerFailedPropertiesFetchUISpec.swift in Sources */,
 				AEB432A81C5B7AFF003B41FF /* MockPropertyService.swift in Sources */,
 				DE99C650116F6CE7649D48FF /* HttpStubs.swift in Sources */,
 			);

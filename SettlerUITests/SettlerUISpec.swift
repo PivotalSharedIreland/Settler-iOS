@@ -5,14 +5,14 @@ import Settler
 class SettlerUISpec: QuickSpec {
     override func spec() {
         
-        beforeSuite {
+        beforeEach {
             self.continueAfterFailure = false
             let app = XCUIApplication()
             app.launchArguments = [HttpStubs.Enabled.rawValue, HttpStubs.PropertiesSuccess.rawValue]
             app.launch()
         }
         
-        afterSuite {
+        afterEach {
             XCUIApplication().terminate()
         }
         
@@ -27,7 +27,7 @@ class SettlerUISpec: QuickSpec {
                 expect(tables.count).to(equal(1))
             }
             
-            it("displays 2 cells") {
+            it("displays 1 cells") {
                 expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1))
             }
             

@@ -35,6 +35,9 @@ class PropertyListTableViewController: UITableViewController, PropertyServiceDel
     }
 
     func loadPropertiesFailure(error: NSError) {
+        propertyList = []
+        tableView.reloadData()
+        UIAlertView(title: "Error", message: "Unable to load properties from the remote service", delegate: nil, cancelButtonTitle: "Okay :-(").show()
     }
 
 
