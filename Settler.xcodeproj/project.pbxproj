@@ -37,7 +37,6 @@
 		DE99C39A547EB8FF5267D7D2 /* PropertyServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */; };
 		DE99C3C188EC0D142892C1E9 /* SettlerHttpSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */; };
 		DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */; };
-		DE99C55276069E5E4791F4D4 /* SettlerFailedPropertiesFetchUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C79A69A6D51A3E1E2A55 /* SettlerFailedPropertiesFetchUISpec.swift */; };
 		DE99C650116F6CE7649D48FF /* HttpStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C654B4B13E578F936430 /* HttpStubs.swift */; };
 		DE99C6BA363B48CE1ECC0B18 /* HttpStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C654B4B13E578F936430 /* HttpStubs.swift */; };
 		DE99C726215887C3EE18F095 /* MockPropertyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C53E161CBA525A214D1F /* MockPropertyService.swift */; };
@@ -402,7 +401,6 @@
 				AEB432A71C5B7AFA003B41FF /* PropertyService.swift in Sources */,
 				AEB432A81C5B7AFF003B41FF /* MockPropertyService.swift in Sources */,
 				DE99C650116F6CE7649D48FF /* HttpStubs.swift in Sources */,
-				DE99C55276069E5E4791F4D4 /* SettlerFailedPropertiesFetchUISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
