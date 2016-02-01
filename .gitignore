@@ -54,3 +54,9 @@ Pods/
 
 fastlane/report.xml
 fastlane/screenshots
+
+# Carthage
+#
+# Each workstation should independently download their own dependencies via Carthage:
+# `carthage update --platform iOS`
+Carthage/
