@@ -3,7 +3,8 @@ pairs:
   lu: Luis Urraca
   fm: Fabio Mangione
   gp: Gregorio Patricio
+  bb: Brian Butz ; bbutz
 
 email:
   prefix: pair
-  domain: pivotallabs.com
+  domain: pivotal.io
