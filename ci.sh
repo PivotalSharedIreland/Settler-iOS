@@ -1,5 +1,4 @@
 #!/bin/sh
 
 set -e
-which carthage || brew install carthage
-carthage update --platform iOS
+/usr/local/bin/carthage update --platform iOS
