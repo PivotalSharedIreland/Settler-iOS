@@ -1,12 +1,16 @@
 import Foundation
 
 class MockPropertyService: PropertyService {
+    
+    private var invocations: Int = 0
+    
     override func loadProperties() {
         self.performSelector(Selector(actionSelector()), withObject: nil, afterDelay: 0)
     }
 
     func returnSuccess() {
         delegate.loadPropertiesSuccess(getProperties())
+        invocations++
     }
 
     func returnFailure() {
@@ -14,7 +18,8 @@ class MockPropertyService: PropertyService {
     }
 
     private func getProperties() -> [Property] {
-        return [Property(address: UITestFixtures.PropertyAddress.rawValue)]
+        let property = Property(address: UITestFixtures.PropertyAddress.rawValue)
+        return Array.init(count: invocations + 1, repeatedValue: property)
     }
 
     private func actionSelector() -> String {

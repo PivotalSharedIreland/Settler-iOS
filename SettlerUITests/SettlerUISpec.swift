@@ -45,7 +45,18 @@ class SettlerUISpec: QuickSpec {
                 expect(cell.staticTexts["address"].label).toEventually(equal(UITestFixtures.PropertyAddress.rawValue))
             }
             
+            it("displays new properties when the user pulls to refresh") {
+                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1))
+                self.pullToRefresh(tables)
+                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(2))
+            }
         }
     }
-
+    
+    internal func pullToRefresh(tables:XCUIElementQuery) {
+        let firstCell = tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
+        let start = firstCell.coordinateWithNormalizedOffset(CGVectorMake(0, 0))
+        let finish = firstCell.coordinateWithNormalizedOffset(CGVectorMake(0, 4))
+        start.pressForDuration(0, thenDragToCoordinate: finish)
+    }
 }

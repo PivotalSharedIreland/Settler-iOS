@@ -6,17 +6,24 @@ class PropertyListTableViewController: UITableViewController, PropertyServiceDel
     private let propertyCellKey = "PropertyCell"
     private var propertyService: PropertyService!
     private var propertyList: [Property] = []
-
+    private let notificationCenter = NSNotificationCenter.defaultCenter()
+    
+    @IBAction func didPullToRefresh(sender: UIRefreshControl) {
+        refreshProperties()
+        self.refreshControl!.endRefreshing()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         propertyService = PropertyServiceFactory.propertyService(self)
+        
+        registerObserver()
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        propertyService.performSelector(Selector("loadProperties"), withObject: nil, afterDelay: 0)
+        refreshProperties()
     }
-
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return propertyList.count
@@ -34,11 +41,21 @@ class PropertyListTableViewController: UITableViewController, PropertyServiceDel
         tableView.reloadData()
     }
 
+    func registerObserver() -> Void {
+        notificationCenter.addObserver(self, selector: Selector("refreshProperties"), name: UIApplicationWillEnterForegroundNotification, object: nil)
+    }
+
     func loadPropertiesFailure(error: NSError) {
         propertyList = []
         tableView.reloadData()
         UIAlertView(title: "Error", message: "Unable to load properties from the remote service", delegate: nil, cancelButtonTitle: "Okay :-(").show()
     }
-
-
+    
+    internal func refreshProperties() {
+        propertyService.performSelector(Selector("loadProperties"), withObject: nil, afterDelay: 0)
+    }
+    
+    deinit {
+        notificationCenter.removeObserver(self)
+    }
 }
