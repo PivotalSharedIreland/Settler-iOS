@@ -4,4 +4,6 @@ xcode_project: Settler.xcodeproj
 xcode_scheme: "Full Test Suite"
 xcode_sdk: iphonesimulator9.2
 before_install:
-  - carthage bootstrap --verbose --platform iOS
+  - carthage update --verbose --platform iOS
+script:
+  - ./build.sh
