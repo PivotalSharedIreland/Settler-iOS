@@ -28,7 +28,7 @@ class SettlerUISpec: QuickSpec {
             }
             
             it("displays 1 cells") {
-                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1))
+                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1), timeout: 5)
             }
             
             it("displays the property cell") {
@@ -46,9 +46,9 @@ class SettlerUISpec: QuickSpec {
             }
             
             it("displays new properties when the user pulls to refresh") {
-                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1))
+                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1), timeout: 5)
                 self.pullToRefresh(tables)
-                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(2))
+                expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(2), timeout: 5)
             }
         }
     }
