@@ -154,7 +154,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Hho-7h-hyt"/>
+                    <navigationItem key="navigationItem" id="Hho-7h-hyt">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ScE-6w-mn8">
+                            <connections>
+                                <segue destination="dsI-BP-9mt" kind="presentation" id="9tM-Kw-ElD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="3Pp-ww-17A" id="v1S-TI-rm9"/>
                     </connections>
@@ -162,6 +168,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-zs-6wG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1750" y="218"/>
+        </scene>
+        <!--Property Edit View Controller-->
+        <scene sceneID="YYQ-sH-xTt">
+            <objects>
+                <viewController id="dsI-BP-9mt" customClass="PropertyEditViewController" customModule="Settler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tTp-Lm-geZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfi-KD-xtP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wix-ca-oqP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNN-Sj-grN">
+                                <rect key="frame" x="546" y="28" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCY-cR-Igr">
+                                <rect key="frame" x="20" y="28" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="Rzs-Tb-Ubi" kind="unwind" unwindAction="backToPropertyViewController:" id="Ol3-fs-CnI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spZ-yW-EAr">
+                                <rect key="frame" x="20" y="66" width="560" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="address"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="spZ-yW-EAr" firstAttribute="top" secondItem="yCY-cR-Igr" secondAttribute="bottom" constant="8" symbolic="YES" id="1zu-Ip-e0Q"/>
+                            <constraint firstItem="yCY-cR-Igr" firstAttribute="baseline" secondItem="eNN-Sj-grN" secondAttribute="baseline" id="59C-QT-iNB"/>
+                            <constraint firstItem="eNN-Sj-grN" firstAttribute="top" secondItem="tTp-Lm-geZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Z1b-lf-bhF"/>
+                            <constraint firstItem="eNN-Sj-grN" firstAttribute="trailing" secondItem="wix-ca-oqP" secondAttribute="trailingMargin" id="hwS-NT-im2"/>
+                            <constraint firstItem="spZ-yW-EAr" firstAttribute="leading" secondItem="yCY-cR-Igr" secondAttribute="leading" id="mSN-do-DT4"/>
+                            <constraint firstItem="yCY-cR-Igr" firstAttribute="leading" secondItem="wix-ca-oqP" secondAttribute="leadingMargin" id="qbj-mD-JK5"/>
+                            <constraint firstItem="spZ-yW-EAr" firstAttribute="trailing" secondItem="eNN-Sj-grN" secondAttribute="trailing" id="xsH-L6-DLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="spZ-yW-EAr" id="NAk-sq-nfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjG-TG-oxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rzs-Tb-Ubi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g67-M6-nxe">

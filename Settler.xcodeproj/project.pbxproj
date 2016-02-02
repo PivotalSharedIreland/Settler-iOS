@@ -27,6 +27,7 @@
 		AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */; };
 		AEFA717E1C59311400CC5D98 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEFB14831C60BDD8000B54BF /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB14821C60BDD8000B54BF /* PropertyViewController.swift */; };
+		AEFB14851C60DD37000B54BF /* PropertyEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB14841C60DD37000B54BF /* PropertyEditViewController.swift */; };
 		DE99C165186C199F81005618 /* UITestFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */; };
 		DE99C1D980F0EBFF5739CCBD /* UITestFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */; };
 		DE99C344D66248EEBB417804 /* PropertySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C396D4D7FA6B9B979893 /* PropertySerializer.swift */; };
@@ -114,6 +115,7 @@
 		AEFA71761C59228A00CC5D98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AEFA71771C59228A00CC5D98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		AEFB14821C60BDD8000B54BF /* PropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
+		AEFB14841C60DD37000B54BF /* PropertyEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyEditViewController.swift; sourceTree = "<group>"; };
 		DE99C004DD0E909C3AFA83BA /* UITestFixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestFixtures.swift; sourceTree = "<group>"; };
 		DE99C1C088A42FE9E9C1606C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99C26F0C3656DF41052936 /* PropertyServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyServiceFactory.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				DE99C3D281275F300D1C2A32 /* Main.storyboard */,
 				DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */,
 				AEFB14821C60BDD8000B54BF /* PropertyViewController.swift */,
+				AEFB14841C60DD37000B54BF /* PropertyEditViewController.swift */,
 			);
 			path = Settler;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				DE99C454CCFD120E20D75A4B /* PropertyListTableViewController.swift in Sources */,
 				DE99CC65BF3C232B5EA556CF /* Property.swift in Sources */,
 				DE99C344D66248EEBB417804 /* PropertySerializer.swift in Sources */,
+				AEFB14851C60DD37000B54BF /* PropertyEditViewController.swift in Sources */,
 				DE99C39A547EB8FF5267D7D2 /* PropertyServiceFactory.swift in Sources */,
 				DE99C726215887C3EE18F095 /* MockPropertyService.swift in Sources */,
 				AEFB14831C60BDD8000B54BF /* PropertyViewController.swift in Sources */,

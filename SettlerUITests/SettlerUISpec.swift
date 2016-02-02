@@ -71,7 +71,34 @@ class SettlerUISpec: QuickSpec {
             it("displays a back button") {
                 expect(app.buttons["Back"].exists).to(beTrue())
             }
+            
+            it("display an edit button") {
+                expect(app.buttons["Edit"].exists).to(beTrue())
+            }
+
+            describe("Property Update View") {
+                beforeEach {
+                    app.buttons["Edit"].tap()
+                    expect(app.staticTexts["address"].exists).toEventually(beFalse())
+                }
+                
+                it("displays the top buttons") {
+                    expect(app.buttons["Cancel"].exists).to(beTrue())
+                    expect(app.buttons["Save"].exists).to(beTrue())
+                }
+                
+                it("goes back when we cancel") {
+                    app.buttons["Cancel"].tap()
+                    expect(app.staticTexts["address"].exists).toEventually(beTrue())
+                }
+                
+                it("displays the address text field") {
+                    expect(app.textFields["address"].exists).to(beTrue())
+                    expect(app.textFields["address"].value as? String).to(equal(UITestFixtures.PropertyAddress.rawValue))
+                }
+            }
         }
+        
         
     }
     
