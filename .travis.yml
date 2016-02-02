@@ -7,3 +7,6 @@ before_install:
   - carthage update --verbose --platform iOS
 script:
   - ./build.sh
+cache:
+  directories:
+  - Carthage
