@@ -42,7 +42,7 @@ class SettlerUISpec: QuickSpec {
 
             it("displays the property address") {
                 let cell = tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
-                expect(cell.staticTexts["address"].label).toEventually(equal(UITestFixtures.PropertyAddress.rawValue))
+                expect(cell.staticTexts["address"].label).toEventually(equal(UITestFixtures.PropertyAddress.rawValue), timeout: 5)
             }
             
             it("displays new properties when the user pulls to refresh") {
