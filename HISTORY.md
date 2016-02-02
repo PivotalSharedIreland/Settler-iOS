@@ -62,3 +62,8 @@ Service factories can be used to do that. To isolate the factory logic from prod
 it can be surrounded by `#if DEBUG` `#else` `#endif` directives. To enable that, the flag `-DDEBUG`
 should be set in the "Debug" case of the "Other Swift flags" section of "Swift Compiler - Other flags" in
  Build settings of the application target.
+1. We saw some pretty cryptic errors on OS X Server CI when running our UI Tests.  Most of the asynchronous ie.
+`expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1))` tests would fail with the message
+`expected to eventually equal <1>, got <1>`.  We were able to work around this issue by setting a longer timeout:
+`expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1), timeout: 5)`
+1. Checking out Travis.  Looks like they already have carthage and most of the tools we need already installed.
