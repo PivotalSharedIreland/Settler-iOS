@@ -101,8 +101,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AE2122671C5FC33B009C9A20 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
-		AE2122681C5FCA89009C9A20 /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
 		AE2122691C60BE21009C9A20 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		AEB432371C5A200C003B41FF /* PropertyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyService.swift; sourceTree = "<group>"; };
 		AEB432391C5A2029003B41FF /* PropertyServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyServiceSpec.swift; sourceTree = "<group>"; };
@@ -131,11 +129,15 @@
 		DE99C8282C5D73858B3C0F15 /* SettlerHttpSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlerHttpSpec.swift; sourceTree = "<group>"; };
 		DE99C8904882890E8384061F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99C8B08D0D0F39022F30AA /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		DE99C92854E47E1272C99A7F /* bootstrap-if-needed.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "bootstrap-if-needed.sh"; sourceTree = "<group>"; };
 		DE99CA6F0A7629E72C8668B9 /* SettlerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerSpec.swift; sourceTree = "<group>"; };
 		DE99CAA88B37F8CDA8457435 /* Settler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE99CACE0AC8C688C8829AC4 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		DE99CB264AF81A7D5EA5928E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE99CBE841051C4EC94054B6 /* bootstrap.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bootstrap.sh; sourceTree = "<group>"; };
 		DE99CC7263FDB4494749903B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE99CE093A2922603055F3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		DE99CE3F80B27D0DB495A1F3 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
 		DE99CF294B2F2FB1505FCA67 /* PropertyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListTableViewController.swift; sourceTree = "<group>"; };
 		DE99CF3B53B37CC32D420D25 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,14 +225,13 @@
 				DE99CF3B53B37CC32D420D25 /* .gitignore */,
 				DE99C509F144BF5E84C0E687 /* .pairs */,
 				DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */,
-				AE2122671C5FC33B009C9A20 /* build.sh */,
-				AE2122681C5FCA89009C9A20 /* ci.sh */,
 				AE2122691C60BE21009C9A20 /* .travis.yml */,
 				AEFA717A1C59306A00CC5D98 /* Frameworks */,
 				DE99C916C69E9DE8D7D751F9 /* Products */,
 				DE99CF8B06062F555E7F27B0 /* Settler */,
 				DE99CD20C5DE375ED4D81B81 /* SettlerTests */,
 				AEFA71301C57DD7000CC5D98 /* SettlerUITests */,
+				DE99CF17CBC9B77BC0734457 /* bin */,
 			);
 			sourceTree = "<group>";
 		};
@@ -253,6 +254,17 @@
 				DE99CA6F0A7629E72C8668B9 /* SettlerSpec.swift */,
 			);
 			path = SettlerTests;
+			sourceTree = "<group>";
+		};
+		DE99CF17CBC9B77BC0734457 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				DE99CE3F80B27D0DB495A1F3 /* ci.sh */,
+				DE99CACE0AC8C688C8829AC4 /* build.sh */,
+				DE99CBE841051C4EC94054B6 /* bootstrap.sh */,
+				DE99C92854E47E1272C99A7F /* bootstrap-if-needed.sh */,
+			);
+			path = bin;
 			sourceTree = "<group>";
 		};
 		DE99CF8B06062F555E7F27B0 /* Settler */ = {
