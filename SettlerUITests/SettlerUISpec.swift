@@ -79,7 +79,7 @@ class SettlerUISpec: QuickSpec {
             describe("Property Update View") {
                 beforeEach {
                     app.buttons["Edit"].tap()
-                    expect(app.staticTexts["address"].exists).toEventually(beFalse())
+                    expect(app.staticTexts["address"].exists).toEventually(beFalse(), timeout: 5)
                 }
                 
                 it("displays the top buttons") {
@@ -89,7 +89,7 @@ class SettlerUISpec: QuickSpec {
                 
                 it("goes back when we cancel") {
                     app.buttons["Cancel"].tap()
-                    expect(app.staticTexts["address"].exists).toEventually(beTrue())
+                    expect(app.staticTexts["address"].exists).toEventually(beTrue(), timeout: 5)
                 }
                 
                 it("displays the address text field") {
