@@ -102,7 +102,7 @@
 /* Begin PBXFileReference section */
 		AE2122671C5FC33B009C9A20 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		AE2122681C5FCA89009C9A20 /* ci.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
-		AE2122691C60BE21009C9A20 /* travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = travis.yml; sourceTree = "<group>"; };
+		AE2122691C60BE21009C9A20 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		AEB432371C5A200C003B41FF /* PropertyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyService.swift; sourceTree = "<group>"; };
 		AEB432391C5A2029003B41FF /* PropertyServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyServiceSpec.swift; sourceTree = "<group>"; };
 		AEB4323B1C5A2A38003B41FF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 				DE99C4F1F34D08E833C9D2D7 /* HISTORY.md */,
 				AE2122671C5FC33B009C9A20 /* build.sh */,
 				AE2122681C5FCA89009C9A20 /* ci.sh */,
-				AE2122691C60BE21009C9A20 /* travis.yml */,
+				AE2122691C60BE21009C9A20 /* .travis.yml */,
 				AEFA717A1C59306A00CC5D98 /* Frameworks */,
 				DE99C916C69E9DE8D7D751F9 /* Products */,
 				DE99CF8B06062F555E7F27B0 /* Settler */,
