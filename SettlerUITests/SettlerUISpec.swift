@@ -51,6 +51,28 @@ class SettlerUISpec: QuickSpec {
                 expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(2), timeout: 5)
             }
         }
+        
+        describe("Property Info Successful View") {
+            var tables:XCUIElementQuery!
+            var app:XCUIApplication!
+
+            beforeEach {
+                app = XCUIApplication()
+                tables = app.tables
+                let cell = tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
+                cell.tap()
+                expect(tables.count).toEventually(equal(0))
+            }
+
+            it("displays property information") {
+                expect(app.staticTexts["address"].label).to(equal(UITestFixtures.PropertyAddress.rawValue))
+            }
+            
+            it("displays a back button") {
+                expect(app.buttons["Back"].exists).to(beTrue())
+            }
+        }
+        
     }
     
     internal func pullToRefresh(tables:XCUIElementQuery) {

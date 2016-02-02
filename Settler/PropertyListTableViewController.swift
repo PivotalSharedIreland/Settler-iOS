@@ -54,7 +54,15 @@ class PropertyListTableViewController: UITableViewController, PropertyServiceDel
     internal func refreshProperties() {
         propertyService.performSelector(Selector("loadProperties"), withObject: nil, afterDelay: 0)
     }
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cell = sender as? UITableViewCell, let indexPath = self.tableView.indexPathForCell(cell),
+            let destinationViewController = segue.destinationViewController as? PropertyViewController {
+            destinationViewController.property = propertyList[indexPath.row]
+        }
+    }
+
+
     deinit {
         notificationCenter.removeObserver(self)
     }

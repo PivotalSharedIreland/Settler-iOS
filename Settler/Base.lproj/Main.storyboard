@@ -15,11 +15,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertyCell" rowHeight="90" id="NOC-zq-2Ji" customClass="PropertyCell" customModule="Settler" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PropertyCell" rowHeight="90" id="NOC-zq-2Ji" customClass="PropertyCell" customModule="Settler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NOC-zq-2Ji" id="rG2-Z4-BpR">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0f-8S-2DF">
@@ -29,7 +29,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="i2H-BE-CIm"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezQ-rs-WRf">
@@ -62,7 +62,7 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House icon" translatesAutoresizingMaskIntoConstraints="NO" id="c0u-0i-bRV">
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="House icon" translatesAutoresizingMaskIntoConstraints="NO" id="c0u-0i-bRV">
                                             <rect key="frame" x="511" y="0.0" width="81" height="82"/>
                                             <accessibility key="accessibilityConfiguration" identifier="thumb">
                                                 <accessibilityTraits key="traits" image="YES"/>
@@ -92,6 +92,7 @@
                                     <outlet property="contactNameLabel" destination="ezQ-rs-WRf" id="aIg-q4-jvB"/>
                                     <outlet property="contactPhoneLabel" destination="RZh-1X-FGz" id="jD2-Wv-c90"/>
                                     <outlet property="propertyImage" destination="c0u-0i-bRV" id="xSd-XZ-vQX"/>
+                                    <segue destination="0o4-ip-qxK" kind="show" id="gwd-dv-cHC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -119,6 +120,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmU-KW-TeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1059" y="218"/>
+        </scene>
+        <!--Property View Controller-->
+        <scene sceneID="IhT-1k-bKu">
+            <objects>
+                <viewController id="0o4-ip-qxK" customClass="PropertyViewController" customModule="Settler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cI4-Tc-apP"/>
+                        <viewControllerLayoutGuide type="bottom" id="gZr-CJ-6lK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfI-yj-Scf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-ww-17A">
+                                <rect key="frame" x="20" y="72" width="560" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="address"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Pp-ww-17A" firstAttribute="top" secondItem="cI4-Tc-apP" secondAttribute="bottom" constant="8" symbolic="YES" id="hrp-3G-6gB"/>
+                            <constraint firstItem="3Pp-ww-17A" firstAttribute="trailing" secondItem="bfI-yj-Scf" secondAttribute="trailingMargin" id="kWg-rA-v7j"/>
+                            <constraint firstItem="gZr-CJ-6lK" firstAttribute="top" secondItem="3Pp-ww-17A" secondAttribute="bottom" constant="507" id="obG-gk-uwn"/>
+                            <constraint firstItem="3Pp-ww-17A" firstAttribute="leading" secondItem="bfI-yj-Scf" secondAttribute="leadingMargin" id="xdT-F4-U9e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="obG-gk-uwn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hho-7h-hyt"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="3Pp-ww-17A" id="v1S-TI-rm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-zs-6wG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g67-M6-nxe">
