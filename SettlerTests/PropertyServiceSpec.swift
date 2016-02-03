@@ -15,7 +15,7 @@ class PropertyServiceSpec: SettlerHttpSpec {
 
             beforeEach {
                 delegate = MyPropertyServiceDelegate()
-                service = PropertyService(delegate: delegate)
+                service = PropertyService(delegate: delegate, baseURL: "http://\(self.defaultHost)")
             }
 
             afterEach {

@@ -3,17 +3,29 @@ import Nimble
 import Settler
 
 class SettlerUISpec: QuickSpec {
+    let expectedAddress = "My cool address"
+    let mockServer = MockServer()
+    
     override func spec() {
-        
         beforeEach {
             self.continueAfterFailure = false
             let app = XCUIApplication()
-            app.launchArguments = [HttpStubs.Enabled.rawValue, HttpStubs.PropertiesSuccess.rawValue]
+            
+            do {
+                try self.mockServer.start()
+            } catch let error {
+                XCTFail("Failed to start server: \(error)")
+            }
+            
+            self.mockServer.respondWith("[{\"id\":1, \"address\":\"\(self.expectedAddress)\"}]")
+            
+            app.launchEnvironment = [kBaseUrl: self.mockServer.baseURL.absoluteString]
             app.launch()
         }
         
         afterEach {
             XCUIApplication().terminate()
+            self.mockServer.stop()
         }
         
         describe("Property List Successful Table View") {
@@ -42,11 +54,14 @@ class SettlerUISpec: QuickSpec {
 
             it("displays the property address") {
                 let cell = tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
-                expect(cell.staticTexts["address"].label).toEventually(equal(UITestFixtures.PropertyAddress.rawValue), timeout: 5)
+                expect(cell.staticTexts["address"].label).toEventually(equal(self.expectedAddress), timeout: 5)
             }
             
             it("displays new properties when the user pulls to refresh") {
                 expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(1), timeout: 5)
+                
+                self.mockServer.respondWith("[{\"id\":1, \"address\":\"\(self.expectedAddress)\"},{\"id\":2, \"address\":\"\(self.expectedAddress)\"}]")
+                
                 self.pullToRefresh(tables)
                 expect(tables.childrenMatchingType(.Cell).count).toEventually(equal(2), timeout: 5)
             }
@@ -65,7 +80,7 @@ class SettlerUISpec: QuickSpec {
             }
 
             it("displays property information") {
-                expect(app.staticTexts["address"].label).to(equal(UITestFixtures.PropertyAddress.rawValue))
+                expect(app.staticTexts["address"].label).to(equal(self.expectedAddress))
             }
             
             it("displays a back button") {
@@ -94,12 +109,10 @@ class SettlerUISpec: QuickSpec {
                 
                 it("displays the address text field") {
                     expect(app.textFields["address"].exists).to(beTrue())
-                    expect(app.textFields["address"].value as? String).to(equal(UITestFixtures.PropertyAddress.rawValue))
+                    expect(app.textFields["address"].value as? String).to(equal(self.expectedAddress))
                 }
             }
         }
-        
-        
     }
     
     internal func pullToRefresh(tables:XCUIElementQuery) {

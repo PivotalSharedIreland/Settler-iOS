@@ -19,8 +19,8 @@ class PropertyService: NSObject {
 
 
     func loadProperties() {
-        Alamofire.request(.GET, "\(baseURL)/properties").responseJSON {
-            response in
+        let urlToHit = "\(baseURL)/properties"
+        Alamofire.request(.GET, urlToHit).responseJSON { response in
             if response.result.isSuccess {
                 self.delegate.loadPropertiesSuccess(self.propertiesFromSuccessResponse(response))
             } else {

@@ -1,6 +1,8 @@
 github "Quick/Quick"
 github "Quick/Nimble"
 github "AliSoftware/OHHTTPStubs" ~> 4.7
+github "swisspol/GCDWebServer" ~> 3.2.5
 
 github "Alamofire/Alamofire" ~> 3.1
 github "SwiftyJSON/SwiftyJSON" ~> 2.3
+

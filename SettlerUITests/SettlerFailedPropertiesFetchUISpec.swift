@@ -6,8 +6,8 @@ class SettlerFailedPropertiesFetchUISpec: QuickSpec {
         beforeEach {
             self.continueAfterFailure = false
             let app = XCUIApplication()
-            app.launchArguments.removeAll()
-            app.launchArguments = [HttpStubs.Enabled.rawValue, HttpStubs.PropertiesFailure.rawValue]
+            
+            app.launchEnvironment = [kBaseUrl: "http://example.com/not-real/"]
             app.launch()
         }
 
