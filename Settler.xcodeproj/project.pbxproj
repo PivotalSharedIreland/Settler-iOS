@@ -30,6 +30,7 @@
 		AEB432971C5A78C3003B41FF /* SettlerUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA71311C57DD7000CC5D98 /* SettlerUISpec.swift */; };
 		AEB432A31C5B5F80003B41FF /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; };
 		AEB432A41C5B5F82003B41FF /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AECC1BBC1C68E11A0064DFEF /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECC1BBB1C68E11A0064DFEF /* HockeySDK.framework */; };
 		AEFA713B1C57E9BB00CC5D98 /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */; };
 		AEFA717E1C59311400CC5D98 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEFA71771C59228A00CC5D98 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEFB14831C60BDD8000B54BF /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB14821C60BDD8000B54BF /* PropertyViewController.swift */; };
@@ -113,6 +114,7 @@
 		AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		AEB432881C5A7849003B41FF /* SettlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECC1BBB1C68E11A0064DFEF /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDK.framework"; sourceTree = "<group>"; };
 		AEFA71311C57DD7000CC5D98 /* SettlerUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlerUISpec.swift; sourceTree = "<group>"; };
 		AEFA71331C57DD7000CC5D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFA713A1C57E9BB00CC5D98 /* PropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			files = (
 				AEB432411C5A43A7003B41FF /* SwiftyJSON.framework in Frameworks */,
 				AEB4323C1C5A2A38003B41FF /* Alamofire.framework in Frameworks */,
+				AECC1BBC1C68E11A0064DFEF /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +215,7 @@
 		AEFA717A1C59306A00CC5D98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AECC1BBB1C68E11A0064DFEF /* HockeySDK.framework */,
 				AE73EF991C61011E00636E76 /* GCDWebServers.framework */,
 				AEB432431C5A4408003B41FF /* OHHTTPStubs.framework */,
 				AEB432401C5A43A7003B41FF /* SwiftyJSON.framework */,
@@ -337,6 +341,7 @@
 				DE99C2EFD6512A0A11DF5BE5 /* Frameworks */,
 				DE99C480C8CFF05BD7C86C2D /* Resources */,
 				AEB4323E1C5A2AD9003B41FF /* CopyFiles */,
+				AECC1BB81C68DF9E0064DFEF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -408,6 +413,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AECC1BB81C68DF9E0064DFEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEB432841C5A7849003B41FF /* Sources */ = {
@@ -561,6 +582,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = Settler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -653,6 +675,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = Settler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
